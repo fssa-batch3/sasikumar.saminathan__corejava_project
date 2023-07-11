@@ -2,14 +2,14 @@ package day04.practice;
 
 import day04.solved.Polygon;
 
-public class Rectangle extends Polygon {
-	
+public class RightAngledTriangle extends Polygon {
+	protected int hypotenuse;
 	protected double length;
 	protected double breadth;
-	
-	public Rectangle(double length, double breadth) throws Exception {
-		super(4);
-		if(length <= 0 || breadth <= 0) {
+
+	public RightAngledTriangle(int numberOfSides, int length, int breadth) throws Exception {
+		super(numberOfSides);
+		if (length <= 0 || breadth <= 0) {
 			throw new Exception("Invalid dimensions for a rectangle");
 		}
 		this.length = length;
@@ -18,18 +18,17 @@ public class Rectangle extends Polygon {
 
 	@Override
 	public double calculateArea() {
-		// TODO Auto-generated method stub
 		return this.length * this.breadth;
 	}
-	
+
 	public int getNumberOfSides() {
 		return super.numberOfSides;
 	}
-	
-	 @Override
+
+	@Override
 	public double calculateCircumference() {
-        return 2 * (this.length + this.breadth);
-    }
+		
+		return super.numberOfSides*length;
+	}
 
 }
-
