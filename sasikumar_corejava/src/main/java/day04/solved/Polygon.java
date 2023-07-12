@@ -12,6 +12,8 @@ public abstract class Polygon {
 		}
 	}
 	
+	public abstract double calculateCircumference(); 
+	
 	
 	public abstract double calculateArea();
 }

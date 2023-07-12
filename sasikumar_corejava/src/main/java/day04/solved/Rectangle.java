@@ -23,5 +23,10 @@ public class Rectangle extends Polygon {
 	public int getNumberOfSides() {
 		return super.numberOfSides;
 	}
+	
+	@Override
+    public double calculateCircumference() {
+        return 2 * (this.length + this.breadth);
+    }
 
 }
