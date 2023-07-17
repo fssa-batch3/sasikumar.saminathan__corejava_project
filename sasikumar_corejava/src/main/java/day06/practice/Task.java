@@ -7,7 +7,7 @@ import java.util.*;
  *  we can find the task there in a list or not 
  */
 
-class Task {
+public class Task {
 
 	public String taskName;
 
@@ -21,7 +21,7 @@ class Task {
 
 }
 
-public class AddTask {
+	class AddTask {
 	public static void main(String[] args) {
 
 		List<Task> arr = new ArrayList<Task>();

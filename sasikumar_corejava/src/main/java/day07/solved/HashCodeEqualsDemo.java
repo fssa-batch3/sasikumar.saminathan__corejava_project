@@ -3,7 +3,6 @@ package day07.solved;
 /**
  * 
  */
-package day07.solved;
 
 import java.util.ArrayList;
 import java.util.HashSet;
