@@ -6,8 +6,9 @@ public class Department {
 		
 		String[] arr = {"HR,Ram","HR, Suresh","IT, Basker","IT, Joseph","Admin, Sundar"};
 		
-		Map<String, List<String>> departmentEmployees = new HashMap<>();
+		Map<String, List<String>> departmentEmployees = new TreeMap<>();
 		
+		//Iterating each elements from arr
 		for(String ele : arr){
 			
 			String[] arr2 = ele.split(",");
@@ -28,6 +29,8 @@ public class Department {
         for (Map.Entry<String, List<String>> entry : departmentEmployees.entrySet()) {
             String department = entry.getKey();
             List<String> employees = entry.getValue();
+            Collections.sort(employees);
+            
             System.out.println(department + ": " + String.join(", ", employees));
         }
 	}

@@ -1,0 +1,22 @@
+package day09.solved;
+
+import java.util.ArrayList;
+import java.util.Collections;
+/*
+ * This code for sorting an array list 
+ * example :-
+ * 
+ * ["Delhi","Chennai,"Bangalore"] => ["Bangalore","Chennai","Delhi"]
+ */
+
+public class CollectionSortingDemo {
+	public static void main(String[] args) {
+		ArrayList<String> cityNames = new ArrayList<String>();
+		cityNames.add("Delhi");
+		cityNames.add("Chennai");
+		cityNames.add("Bangalore");
+		System.out.println("Before Sort:" + cityNames);
+		Collections.sort(cityNames);
+		System.out.println("After Sort:" + cityNames);
+	}
+}
