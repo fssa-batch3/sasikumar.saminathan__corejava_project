@@ -64,7 +64,7 @@ import java.util.*;
 
 			@Override
 			public String toString() {
-				return "\nTask [priority=" + priority + ", name=" + name + ", deadline=" + deadline + "]\n";
+				return "Task [priority=" + priority + ", name=" + name + ", deadline=" + deadline + "]\n";
 			}
 			
 			

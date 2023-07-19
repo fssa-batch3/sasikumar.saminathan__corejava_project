@@ -24,9 +24,19 @@ hello: 1
  */
 
 public class NameCount {
-	public static void main(String[] args) {
+	
+	public static boolean Count(String[] arr) throws IllegalArgumentException{
 		
-		String[] arr = {"Ram", "Ram", "Superman", "spider", "hey", "hello", "hey", "Spider"};
+		if(arr == null){
+			throw new IllegalArgumentException("Array cannot ba a null");
+		}
+		
+		for(String ele : arr) {
+			
+			if(ele == null){
+				throw new IllegalArgumentException("Array elements cannot be a null");
+			}
+		}
 		
 		Map<String,Integer> countMap = new HashMap<String,Integer>();
 		
@@ -49,5 +59,15 @@ public class NameCount {
 			Integer count = countMap.get(ele);
 			System.out.println(ele+": "+count);
 		}
+		
+		return true;
+	}
+	
+	public static void main(String[] args) {
+		
+		String[] arr = {"Ram", "Ram", "Superman", "spider", "hey", "hello", "hey", "Spider"};
+		
+		NameCount.Count(arr);
+		
 	}
 }
