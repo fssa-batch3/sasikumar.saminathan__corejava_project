@@ -1,6 +1,6 @@
 package day10.solved;
 class NewTaskValidator {
-	public static boolean validate(Task task)  {
+	public static boolean validate(Task task) {
 		if (task == null)
 			throw new IllegalArgumentException("Task is null");
 		else if (task.getName() == null || "".equals(task.getName()))

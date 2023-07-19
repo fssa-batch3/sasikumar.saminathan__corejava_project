@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.*;
 
 		class Task2 implements Comparable<Task2> {
+			
 			private int priority;
 			private String name;
 			private LocalDate deadline;
@@ -58,7 +59,6 @@ import java.util.*;
 					} else {
 						return -1;
 					}
-					// return ( this.balance > o.getBalance()) ? 1: -1;
 				}
 			}
 

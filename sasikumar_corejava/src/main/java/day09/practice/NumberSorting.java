@@ -13,6 +13,22 @@ import java.util.*;
  */
 public class NumberSorting {
 	
+	public static boolean sort(ArrayList<Integer> arr) throws IllegalArgumentException{
+		
+		if(arr == null){
+			throw new IllegalArgumentException("Array cannot be null");
+		}
+		
+		Collections.sort(arr);
+		
+		System.out.print("Sorted array : ");
+		for(int ele : arr){
+			System.out.print(ele+" ");
+		}
+		
+		return true;
+	}
+	
 	public static void main(String[] args) {
 		
 		Scanner s = new Scanner(System.in);
@@ -29,13 +45,6 @@ public class NumberSorting {
 			
 			//Adding number to the arraylist
 			arr.add(a);
-		}
-		
-		Collections.sort(arr);
-		
-		System.out.print("Sorted array : ");
-		for(int ele : arr){
-			System.out.print(ele+" ");
 		}
 		
 		s.close();
