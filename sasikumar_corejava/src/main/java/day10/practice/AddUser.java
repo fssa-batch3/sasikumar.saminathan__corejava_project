@@ -1,5 +1,4 @@
 package day10.practice;
-
 import java.util.ArrayList;
 
 
@@ -11,7 +10,6 @@ import java.util.ArrayList;
 	public UserAlreadyExistsException(String msg) {
 		super(msg);
 	}
-	
 	public UserAlreadyExistsException(Throwable msg) {
 		super(msg);
 	}
@@ -20,18 +18,7 @@ import java.util.ArrayList;
 	}
 }
 
-class User {
-	int id;
-	String name;
-	String emailId;
-	
-	public User(int id,String name,String emailId) {
-		this.id = id;
-		this.name = name;
-		this.emailId = emailId;
-	}
-	
-}
+
 
 	class Account{
 	

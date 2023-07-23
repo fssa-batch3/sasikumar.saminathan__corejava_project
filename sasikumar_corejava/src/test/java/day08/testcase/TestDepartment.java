@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions;
 
 public class TestDepartment {
 	
-	String[] arr = {"HR,Ram","HR, Suresh","IT, Basker","IT, Joseph","Admin, Sundar"};
+	String[] arr = {"HR,Ram","HR,Suresh","IT, Basker","IT, Joseph","Admin, Sundar"};
 	String[] arr2 = {"",""};
 	String[] arr3 = {"HR,Ram,IT"};
 	
